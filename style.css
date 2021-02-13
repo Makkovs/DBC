@@ -1,0 +1,25 @@
+*{
+    background: rgb(80, 80, 80);
+    overflow-x: hidden;
+}
+
+nav{
+    padding: 250px 0px 0px 500px;
+    color: aliceblue;
+}
+
+nav button{
+    height: 30px;
+    width: 180px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+button:hover{
+    background: rgb(109, 109, 109);
+}
+
+nav h1{
+    position: relative;
+    left: 50px;
+}

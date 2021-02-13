@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Constructor</title>
+    <link rel="stylesheet" href="create.css">
+    <script src="eel.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><button>Назад</button></a>
+    </nav>
+    <div class="content">
+        <span class="name">Имя проекта: </span><input type="text" id = "name"><br>
+        <span class="name">Расположение файла: </span><input type="text" placeholder="путь к папке" class="rasp" id="path"><br>
+        <span class="name">Платформа: </span>
+        <select>
+            <option>Discord</option>
+            <option>Telegram</option>
+            <option>VK</option>
+        </select> <br>
+        <span class="name">Язык программирования:</span>
+        <select>
+            <option>JavaScript</option>
+            <option>Python</option>
+        </select><br>
+        <button class="crt" id="crt">Создать</button>
+        <script>
+            let btn = document.querySelector("#crt");
+            btn.addEventListener("click", sendCreate);
+
+            async function sendCreate(){
+                let name = document.querySelector("#name").value;
+                let path = document.querySelector("#path").value;
+                await eel.create(name, path);
+            }
+        </script>
+    </div>
+</body>
+</html>

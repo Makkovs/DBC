@@ -1,0 +1,45 @@
+*{
+    background: rgb(80, 80, 80);
+    overflow-x: hidden;
+}
+
+nav{
+    color: aliceblue;
+}
+
+nav button{
+    height: 22px;
+    width: 70px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.content{
+    padding: 250px 0px 0px 300px;
+}
+
+.content{
+
+}
+
+input, select{
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.rasp{
+    width: 400px;
+}
+
+.name{
+    color: aliceblue;
+}
+
+.crt{
+    margin-top: 20px;
+    margin-left: 520px;
+    height: 30px;
+    width: 100px;
+    background: rgb(112, 112, 112);
+}
+
