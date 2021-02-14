@@ -16,15 +16,15 @@
         <span class="name">Имя проекта: </span><input type="text" id = "name"><br>
         <span class="name">Расположение файла: </span><input type="text" placeholder="путь к папке" class="rasp" id="path"><br>
         <span class="name">Платформа: </span>
-        <select>
-            <option>Discord</option>
-            <option>Telegram</option>
-            <option>VK</option>
+        <select id="platform">
+            <option value="123">Discord</option>
+            <option value="233">Telegram</option>
+            <option value="312312">VK</option>
         </select> <br>
         <span class="name">Язык программирования:</span>
-        <select>
-            <option>JavaScript</option>
-            <option>Python</option>
+        <select id="program">
+            <option value="1">JavaScript</option>
+            <option value="2">Python</option>
         </select><br>
         <button class="crt" id="crt">Создать</button>
         <script>
@@ -34,7 +34,9 @@
             async function sendCreate(){
                 let name = document.querySelector("#name").value;
                 let path = document.querySelector("#path").value;
-                await eel.create(name, path);
+                let platform = document.querySelector("#platform option:checked").value;
+                let program = document.querySelector("#program option:checked").value;
+                await eel.create(name, path, platform, program);
             }
         </script>
     </div>
