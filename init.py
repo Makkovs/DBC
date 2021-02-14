@@ -6,9 +6,8 @@ eel.init('C:\\Users\\Makkov\\Desktop\\DBC')
 
 @eel.expose
 def create(name, path, platform, program):
-    print(name, path, platform, program)
-    jp = {"JavaScript" : "bot.js", "Python" : "bot.py"}
-    filepath = os.path.join(path, 'bot.js')
+    jp = {"j2" : "bot.js", "p2" : "bot.py"}
+    filepath = os.path.join(path, jp[program])
     if not os.path.exists(path):
         os.makedirs(path)
     f = open(filepath, "a")

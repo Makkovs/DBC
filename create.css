@@ -14,17 +14,26 @@ nav button{
     color: aliceblue;
 }
 
+button:hover{
+    background: rgb(214, 209, 209);
+}
+
 .content{
     padding: 250px 0px 0px 300px;
 }
 
-.content{
-
-}
-
 input, select{
     margin-top: 10px;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
+}
+
+select:hover{
+    background: rgb(116, 116, 116);
+}
+
+input:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(116, 116, 116);
 }
 
 .rasp{
