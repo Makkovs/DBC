@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord Bot Constructor</title>
-    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="./css/create.css">
+    <link rel="shortcut icon" href="./images/document.png" type="image/x-icon">
     <script src="eel.js"></script>
 </head>
 <body>
@@ -14,7 +15,6 @@
     </nav>
     <div class="content">
         <span class="name">Имя проекта: </span><input type="text" id = "name"><br>
-        <span class="name">Расположение файла: </span><input type="text" placeholder="путь к папке" class="rasp" id="path"><br>
         <span class="name">Платформа: </span>
         <select id="platform">
             <option value="d1">Discord</option>
@@ -37,14 +37,10 @@
                     alert("Введите название проекта!")
                     return;
                 }
-                let path = document.querySelector("#path").value;
-                if(path.length < 1){
-                    alert("Введите путь к папке проекта!")
-                    return;
-                }
                 let platform = document.querySelector("#platform option:checked").value;
                 let program = document.querySelector("#program option:checked").value;
-                await eel.create(name, path, platform, program);
+                await eel.create(name, platform, program);
+                //document.location.href = "project.html";
             }
         </script>
     </div>

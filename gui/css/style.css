@@ -1,0 +1,38 @@
+*{
+    background: #2c3632;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+button, 
+button:active, 
+button:focus,
+input:focus {
+    outline: none;
+}
+
+
+nav{
+    padding: 250px 0px 0px 500px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+nav button{
+    height: 50px;
+    width: 220px;
+    color: aliceblue;
+    background: #3d6a66;
+    border-radius: 21px;
+    border: 0px;
+}
+
+button:hover{
+    background: #899593;
+}
+
+nav h1{
+    position: relative;
+    left: -25px;
+}

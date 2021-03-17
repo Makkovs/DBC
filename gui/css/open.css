@@ -4,22 +4,16 @@
 }
 
 nav{
-    padding: 250px 0px 0px 500px;
     color: aliceblue;
 }
 
 nav button{
-    height: 30px;
-    width: 180px;
+    height: 22px;
+    width: 70px;
     margin-top: 10px;
     color: aliceblue;
 }
 
 button:hover{
-    background: rgb(109, 109, 109);
-}
-
-nav h1{
-    position: relative;
-    left: 50px;
+    background: rgb(214, 209, 209);
 }

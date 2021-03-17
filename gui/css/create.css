@@ -1,0 +1,100 @@
+*{
+    background: #2c3632;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+button, 
+button:active, 
+button:focus,
+input:focus,
+select:focus {
+    outline: none;
+}
+
+nav{
+    color: aliceblue;
+}
+
+nav button{
+    height: 22px;
+    width: 70px;
+    margin-top: 10px;
+    color: white;
+    border: 0px;
+    border-radius: 2px;
+    background: #3d6a66;
+}
+
+button:hover{
+    background: #899593;
+}
+
+.content{
+    padding: 250px 0px 0px 300px;
+}
+
+input{
+    margin-top: 10px;
+    color: black;
+    background: white;
+    border: 3px solid #899593;
+    border-radius: 5px;
+}
+
+input:focus{
+    background: rgb(170, 170, 170);
+    border: 3px solid rgb(0, 0, 0);
+}
+
+select{
+    margin: 5px;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    line-height: 30px;
+    background: #3d6a66;
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+}
+
+option{
+    margin: 5px;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    line-height: 30px;
+    background: #3d6a66;
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+}
+
+select:hover, select:focus{
+    background: rgb(116, 116, 116);
+}
+
+option:hover, option:focus{
+    background: rgb(116, 116, 116);
+}
+
+.rasp{
+    width: 400px;
+}
+
+.name{
+    color: aliceblue;
+}
+
+.crt{
+    margin-top: 20px;
+    margin-left: 520px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background: #3d6a66;
+    border: 0px;
+    border-radius: 4px;
+}
+
