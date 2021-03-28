@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,14 +33,9 @@
 
             async function sendCreate(){
                 let name = document.querySelector("#name").value;
-                if(name.length < 1){
-                    alert("Введите название проекта!")
-                    return;
-                }
-                let platform = document.querySelector("#platform option:checked").value;
                 let program = document.querySelector("#program option:checked").value;
                 await eel.create(name, platform, program);
-                //document.location.href = "project.html";
+                document.location.href = "index.html";
             }
         </script>
     </div>

@@ -12,14 +12,23 @@ input:focus {
 }
 
 
-nav{
-    padding: 250px 0px 0px 500px;
+.menu{
     color: aliceblue;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-nav button{
+.text{
+    margin-left: 50px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.menu button{
     height: 50px;
     width: 220px;
     color: aliceblue;

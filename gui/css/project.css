@@ -1,0 +1,76 @@
+*{
+    background: #2c3632;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: sans-serif;
+}
+
+button, 
+button:active, 
+button:focus,
+input:focus {
+    outline: none;
+}
+
+nav{
+    color: white;
+}
+
+nav button{
+    height: 22px;
+    width: 70px;
+    margin-top: 10px;
+    color: white;
+    border: 0px;
+    border-radius: 2px;
+    background: #3d6a66;
+}
+
+nav button:hover{
+    background: #899593;
+}
+
+.commands{
+    background: #69849b;
+    height: 650px;
+    width: 300px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+h3{
+    position: relative;
+    top: -18px;
+    left: 5px;
+    color: white;
+    background: #69849b;
+}
+
+.command{
+    position: relative;
+    left: 330px;
+    top: -650px;
+    background: #69849b;
+    height: 650px;
+    width: 700px;
+    border-radius: 5px;
+}
+
+.selectс{
+    color: white;
+    height: 50px;
+    width: 600px;
+    background: #3d6a66;
+    border: 1px solid black;
+}
+
+.selectс:hover{
+    background: #899593;
+}
+
+.oops{
+    background: #1d2424;
+    color: white;
+    margin-top: 300px;
+    margin-left: 110px;
+}

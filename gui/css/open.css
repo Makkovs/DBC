@@ -1,19 +1,63 @@
 *{
-    background: rgb(80, 80, 80);
+    background: #2c3632;
     overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: sans-serif;
+}
+
+button, 
+button:active, 
+button:focus,
+input:focus {
+    outline: none;
 }
 
 nav{
-    color: aliceblue;
+    color: white;
 }
 
 nav button{
     height: 22px;
     width: 70px;
     margin-top: 10px;
-    color: aliceblue;
+    color: white;
+    border: 0px;
+    border-radius: 2px;
+    background: #3d6a66;
 }
 
-button:hover{
-    background: rgb(214, 209, 209);
+nav button:hover{
+    background: #899593;
+}
+
+.menu{
+    margin-top: 20px;
+    background: #1d2424;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectm{
+    color: white;
+    height: 50px;
+    width: 600px;
+    background: #3d6a66;
+    border: 1px solid black;
+}
+
+.selectm:hover{
+    background: #899593;
+}
+
+.oops{
+    background: #1d2424;
+    color: white;
+    margin-top: 300px;
+    margin-left: 110px;
+}
+
+h2{
+    color:white;
 }

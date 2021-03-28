@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord Bot Constructor</title>
     <link rel="stylesheet" href="./css/open.css">
+    <link rel="shortcut icon" href="./images/document.png" type="image/x-icon">
     <script src="eel.js"></script>
 </head>
 <body>
     <nav>
         <a href="index.html"><button>Назад</button></a>
     </nav>
-    <script>
-        Request('./project/')
-    </script>
+    <h2>Ваши проекты:</h2>
+    <div class="menu" id='menu'>
+        <script>
+            eel.expose(get_opens)
+            function get_opens(slovar, num){
+                if(slovar != 0){
+                for (let i = 0; i < num; i++){
+                    document.getElementById('menu').innerHTML += '<button class="selectm" id="btn" value="' + slovar[i] + '">' + slovar[i] + '</button>';
+                }
+                let btn = document.querySelector("#btn");
+                btn.addEventListener("click", sendOpen);
+                async function sendOpen(){
+                    let idn = document.querySelector("#btn").value;
+                    await eel.openProject(idn);
+                    document.location.href = "project.html"
+                }
+                }else{
+                    document.getElementById('menu').innerHTML += '<h3 class="oops">' + 'Упсс... У вас ещё нет проектов...' + '</h2>';
+                }
+            }
+        </script>
+    </div>
 </body>
 </html>

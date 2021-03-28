@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,36 @@
     <script src="eel.js"></script>
 </head>
 <body>
-
+    <nav>
+        <a href="index.html"><button>В меню</button></a>
+    </nav>
+    <div class="commands">
+        <h3>Команды:</h3>
+        <script>
+            eel.expose(get_commands)
+            function get_commands (cmds){
+                if(cmds != 0){
+                for (let i = 0; i < num; i++){
+                    console.log(i)
+                    console.log(num)
+                    document.getElementById('commands').innerHTML += '<button class="selectc" id="btn" value="' + cmds[i] + '">' + cmds[i] + '</button>';
+                }
+                let btn = document.querySelector("#btn");
+                btn.addEventListener("click", sendOpen);
+                async function sendOpen(){
+                    let idn = document.querySelector("#btn").value;
+                }
+                }else{
+                    document.getElementById('commands').innerHTML += '<h3 class="oops">' + 'Упсс... В этом проекте нет команд...' + '</h2>';
+                }
+            }
+        </script>
+    </div>
+    <div class="command">
+        <h3>Настроить команду</h3>
+    </div>
+    <script>
+        //JAVASCRIPT
+    </script>
 </body>
 </html>
